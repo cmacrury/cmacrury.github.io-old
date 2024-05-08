@@ -1,0 +1,317 @@
+---
+---
+
+@string{aps = {American Physical Society,}}
+
+
+
+@inproceedings{macrury2022contention,
+	author    = {Calum MacRury and
+	Will Ma and Nathaniel Grammel},
+	title     = {On (Random-order) Online Contention Resolution Schemes for the Matching Polytope of (Bipartite) Graphs},
+	year ={2023},
+	booktitle = {{ACM-SIAM} Symposium on Discrete
+	Algorithms, {SODA}},
+	eprinttype = {arXiv},
+	arXiv  = {2209.07520},
+	abstract ={We present new results for online contention resolution schemes for the
+	matching polytope of graphs, in the random-order (RCRS) and adversarial (OCRS)
+	arrival models. Our results include improved selectability guarantees (i.e., lower bounds), as well
+	as new impossibility results (i.e., upper bounds).
+	By well-known reductions to the prophet
+	(secretary) matching problem, a $c$-selectable OCRS (RCRS) implies a $c$-competitive
+	algorithm for adversarial (random order) edge arrivals.
+	Similar reductions are also known for the query-commit matching problem.
+	For the adversarial arrival model, we present a new
+	analysis of the OCRS of Ezra et al.~(EC, 2020). We show that this scheme is
+	$0.344$-selectable for general graphs and $0.349$-selectable for bipartite
+	graphs, improving on the previous $0.337$ selectability result for this algorithm. We also show that the selectability of this scheme cannot
+	be greater than $0.361$ for general graphs and $0.382$ for bipartite graphs. We further show that no OCRS can
+	achieve a selectability greater than $0.4$ for general graphs, and $0.433$
+	for bipartite graphs.
+	
+	For random-order arrivals, we present two attenuation-based schemes which use new attenuation functions.
+	Our first RCRS is $0.474$-selectable for general graphs, and our
+	second is $0.476$-selectable for bipartite graphs. These results improve upon the recent $0.45$ (and $0.456$) selectability results for general graphs (respectively, bipartite graphs) due to Pollner et al.~(EC, 2022). On general graphs, our 0.474-selectable RCRS provides the best known positive result even for offline contention resolution, and also for the correlation gap.
+	We conclude by proving a fundamental upper bound of 0.5 on the selectability of RCRS, using bipartite graphs.},
+	pdf = {posted_papers/macrury_2022_contention.pdf},
+}
+
+
+
+
+
+@inproceedings{gao2022hamiltonian,
+  	  title = {A Fully Adaptive Strategy for Hamiltonian Cycles in the Semi-Random Graph Process},
+  	  author = {Pu Gao and Calum MacRury and Paweł Prałat},
+      year={2022},
+      booktitle={RANDOM},
+      eprint={2102.04325},
+      archivePrefix={arXiv},
+      primaryClass={cs.DM},
+      arxiv = {2205.02350},
+      html ={https://drops.dagstuhl.de/opus/volltexte/2022/17151/},
+	 abstract = {The semi-random graph process is a single player game in which the player is initially presented an empty graph on $n$ vertices. In each round, a vertex $u$ is presented to the player independently and uniformly at random. The player then adaptively selects a vertex $v$, and adds the edge $uv$ to the graph. For a fixed monotone graph property, the objective of the player is to force the graph to satisfy this property with high probability in as few rounds as possible.
+
+We focus on the problem of constructing a Hamiltonian cycle in as few rounds as possible. In particular, we present an adaptive strategy for the player which achieves it in $\alpha n$ rounds, where $\alpha < 2.01678$ is derived from the solution to some system of differential equations. We also show that the player cannot achieve the desired property in less than $\beta n$ rounds, where $\beta > 1.26575$. These results improve the previously best known bounds and, as a result, the gap between the upper and lower bounds is decreased from 1.39162 to 0.75102.},
+      pdf = {posted_papers/gao_2022_hamiltonian.pdf},
+}
+
+
+
+
+@inproceedings{borodin2021prophet,
+      title={Prophet Matching in the Probe-Commit Model}, 
+      author={Allan Borodin and Calum MacRury and Akash Rakheja},
+      booktitle={APPROX},
+      year={2022},
+      eprint={2102.04325},
+      archivePrefix={arXiv},
+      primaryClass={cs.DM},
+      arxiv = {2102.04325},
+       html={https://drops.dagstuhl.de/opus/volltexte/2022/17168/},
+      note = {This work generalizes many of the results from a 2020 preprint by the same authors, ``Bipartite Stochastic Matching: Online, Random Order, and I.I.D. Models''. The arXiv version is titled "Prophet Matching Meets Probing with Commitment."},
+      abstract = {
+We consider the online bipartite stochastic matching problem with known i.d. (independently distributed) online vertex arrivals. In this problem, when an online vertex arrives, its weighted edges must be
+probed (queried) to determine if they exist, based on known edge probabilities. Our algorithms operate
+in the probe-commit model, in that if a probed edge exists, it must be used in the matching. Additionally,
+each online node has a downward-closed probing constraint on its adjacent edges which indicates which
+sequences of edge probes are allowable. Our setting generalizes the commonly studied patience (or timeout) constraint which limits the number of probes that can be made to an online node’s adjacent edges.
+Most notably, this includes non-uniform edge probing costs (specified by knapsack/budget constraint).
+We extend a recently introduced configuration LP to the known i.d. setting, and also provide the first
+proof that it is a relaxation of an optimal offline probing algorithm (the offline adaptive benchmark). Using this LP,
+we establish new competitive bounds all of which generalize the standard non-stochastic setting when edges do not need to be probed (i.e., exist with certainty). 
+      },
+      pdf = {posted_papers/borodin_2021_prophet.pdf}
+}
+
+
+
+
+
+
+@article{macrury2022phase,
+      title={The Phase Transition of Discrepancy in Random Hypergraphs}, 
+      author={Calum MacRury and Tomáš Masařík and Leilani Pai and Xavier Pérez-Giménez},
+      year={2022},
+      eprint={2102.07342},
+      journal = {SIAM Journal on Discrete Mathematics (minor revision)},
+      archivePrefix={arXiv},
+      primaryClass={math.CO},
+      arxiv={2102.07342},
+      pdf = {posted_papers/macrury_2021_discrepancy.pdf},
+      abstract={Motivated by the Beck-Fiala conjecture, we study the discrepancy problem in two related models of random hypergraphs on $n$ vertices and $m$ edges. In the first ({\em edge-independent}) model, a random hypergraph $H_1$ is constructed by fixing a parameter $p$ and allowing each of the $n$ vertices to join each of the $m$ edges independently with probability $p$. In the parameter range in which $pn \rightarrow \infty$ and $pm \rightarrow \infty$, we show that with high probability (\whp) $H_1$ has discrepancy at least $\Omega(2^{-n/m} \sqrt{pn})$ when $m = O(n)$, and at least $\Omega(\sqrt{pn \log\gamma })$ when $m \gg n$,
+where $\gamma = \min\{ m/n, pn\}$. In the second ({\em edge-dependent}) model, $d$ is fixed and each vertex of $H_2$ independently joins exactly $d$ edges uniformly at random.
+We obtain analogous results for this model by generalizing the techniques used for the edge-independent model with $p=d/m$. Namely, for $d \rightarrow \infty$ and $dn/m \rightarrow \infty$, we prove that \whp\ $H_{2}$ has discrepancy at least $\Omega(2^{-n/m} \sqrt{dn/m})$ when $m = O(n)$, and at least $\Omega(\sqrt{(dn/m) \log\gamma})$ when $m \gg n$, where $\gamma =\min\{m/n, dn/m\}$. 
+Furthermore, we obtain nearly matching asymptotic upper bounds on the discrepancy in both models (when $p=d/m$), in the dense regime of $m \gg n$. Specifically, we apply the partial colouring lemma of Lovett and Meka to show that \whp\ $H_{1}$ and $H_{2}$ each have discrepancy $O( \sqrt{dn/m}  \log(m/n))$, provided $d \rightarrow \infty$, $d n/m \rightarrow \infty$ and $m \gg n$. This result is algorithmic, and together with the work of Bansal and Meka characterizes how the discrepancy of each random hypergraph model transitions from $\Theta(\sqrt{d})$ to $o(\sqrt{d})$ as $m$ varies from $m=\Theta(n)$ to $m \gg n$.}
+}
+
+
+
+
+
+@article{gao2021perfect,
+      title={Perfect Matchings in the Semi-random Graph Process}, 
+      author={Pu Gao and Calum MacRury and Pra\l{}at, Pawe\l{}},
+      year={2022},
+      journal = {SIAM Journal on Discrete Mathematics},
+      eprint={2105.13455},
+      doi = {10.1137/21M1446939},
+      html={https://epubs.siam.org/doi/10.1137/21M1446939},
+      archivePrefix={arXiv},
+      primaryClass={math.CO},
+      pdf = {posted_papers/gao_2021_matching.pdf},
+      arxiv={2105.13455},
+      abstract={
+		The semi-random graph process is a single player game in which the player is initially presented an empty graph on $n$ vertices. In each round, a vertex $u$ is presented to the player independently and uniformly at random. The player then adaptively selects a vertex $v$, and adds the edge $uv$ to the graph. For a fixed monotone graph property, the objective of the player is to force the graph to satisfy this property with high probability in as few rounds as possible.
+
+We focus on the problem of constructing a perfect matching in as few rounds as possible. In particular, we present an adaptive strategy for the player which achieves a perfect matching in $\beta n$ rounds, where the value of $\beta < 1.206$ is derived from a solution to some system of differential equations. This improves upon the previously best known upper bound of $(1+2/e+o(1)) \, n < 1.736 \, n$ rounds. We also improve the previously best lower bound of $(\ln 2 + o(1)) \, n > 0.693 \, n$ and show that the player cannot achieve the desired property in less than $\alpha n$ rounds, where the value of $\alpha > 0.932$ is derived from a solution to another system of differential equations. As a result, the gap between the upper and lower bounds is decreased roughly four times.      }
+}
+
+
+
+@inproceedings{bonato_2020_probabilistically,
+  title={Probabilistically Faulty Searching on a Half-Line},
+  author={Bonato, Anthony and Georgiou, Konstantinos and MacRury, Calum and Pra\l{}at, Pawe\l{}},
+  arxiv={2002.07797},
+  booktitle={LATIN},
+  year={2020},
+  abstract = {We study p-Faulty Search, a variant of the classic cow-path optimization problem, where a unit speed robot searches the half-line (or 1-ray) for a hidden item. The searcher is probabilistically faulty, and detection of the item with each visitation is an independent Bernoulli trial whose probability of success p is known. The objective is to minimize the worst case expected detection time, relative to the distance of the hidden item to the origin. A variation of the same problem was first proposed by Gal in 1980. Then in 2003, Alpern and Gal [The Theory of Search Games and Rendezvous] proposed a so-called monotone solution for searching the line (2-rays); that is, a trajectory in which the newly searched space increases monotonically in each ray and in each iteration. Moreover, they conjectured that an optimal trajectory for the 2-rays problem must be monotone. We disprove this conjecture when the search domain is the half-line (1-ray). We provide a lower bound for all monotone algorithms, which we also match with an upper bound. Our main contribution is the design and analysis of a sequence of refined search strategies, outside the family of monotone algorithms, which we call t-sub-monotone algorithms. Such algorithms induce performance that is strictly decreasing with t, and for all p \in (0,1). The value of t quantifies, in a certain sense, how much our algorithms deviate from being monotone, demonstrating that monotone algorithms are sub-optimal when searching the half-line.},
+html = {https://link.springer.com/chapter/10.1007/978-3-030-61792-9_14}
+}
+
+@inproceedings{bonato_2015_robot,
+author = {Bonato, Anthony and R\'{\i}o-Chanona, Rita M. and MacRury, Calum and Nicolaidis, Jake and P\'{e}rez-Gim\'{e}nez, Xavier and Pra\l{}at, Pawe\l{} and Ternovsky, Kirill},
+title = {The Robot Crawler Number of a Graph},
+year = {2015},
+isbn = {9783319267838},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+url = {https://doi.org/10.1007/978-3-319-26784-5_11},
+doi = {10.1007/978-3-319-26784-5_11},
+note = {Conference version of ``The Robot Crawler Graph Process''.},
+abstract = {Information gathering by crawlers on the web is of practical interest. We consider a simplified model for crawling complex networks such as the web graph, which is a variation of the robot vacuum edge-cleaning process of Messinger and Nowakowski. In our model, a crawler visits nodes via a deterministic walk determined by their weightings which change during the process deterministically. The minimum, maximum, and average time for the robot crawler to visit all the nodes of a graph is considered on various graph classes such as trees, multi-partite graphs, binomial random graphs, and graphs generated by the preferential attachment model.},
+booktitle = {WAW},
+pages = {132–147},
+numpages = {16},
+location = {Eindhoven, The Netherlands},
+series = {WAW 2015},
+html = {https://link.springer.com/chapter/10.1007/978-3-319-26784-5_11}
+}
+
+@article{bonato_2018_robot,
+title = "The Robot Crawler Graph Process",
+journal = "Discrete Applied Mathematics",
+volume = "247",
+pages = "23 - 36",
+year = "2018",
+issn = "0166-218X",
+note = {Journal version of ``The Robot Crawler Number of a Graph''.},
+doi = "https://doi.org/10.1016/j.dam.2018.01.018",
+url = "http://www.sciencedirect.com/science/article/pii/S0166218X18301227",
+author = "Anthony Bonato and Rita M. {del Río-Chanona} and Calum MacRury and Jake Nicolaidis and Xavier Pérez-Giménez and Paweł Prałat and Kirill Ternovsky",
+keywords = "Deterministic walk, Graph searching, Random graph, Preferential attachment model",
+abstract = "Information gathering by crawlers on the web is of practical interest. We consider a simplified model for crawling complex networks such as the web graph, which is a variation of the robot vacuum edge-cleaning process of Messinger and Nowakowski. In our model, a crawler visits nodes via a deterministic walk determined by their weightings which change during the process deterministically. The minimum, maximum, and average time for the robot crawler to visit all the nodes of a graph is considered on various graph classes such as trees, multi-partite graphs, binomial random graphs, and graphs generated by the preferential attachment model.",
+html={https://www.sciencedirect.com/science/article/abs/pii/S0166218X18301227}
+}
+
+
+
+
+
+@article{dudek_2020_localization,
+      title={Localization Game for Random Graphs}, 
+      author={Andrzej Dudek and Sean English and Alan Frieze and Calum MacRury and Pra\l{}at, Pawe\l{}},
+      year={2022},
+      journal = {Discrete Applied Mathematics},
+      eprint={1910.11225},
+      archivePrefix={arXiv},
+      primaryClass={math.CO},
+      arxiv = {1910.11225},
+      html = {https://www.sciencedirect.com/science/article/abs/pii/S0166218X21004819},
+      abstract = {
+      We consider the localization game played on graphs in which a cop tries to determine the exact location of an invisible robber by exploiting distance probes. The corresponding graph parameter \zeta(G) for a given graph G is called the localization number. In this paper, we improve the bounds for dense random graphs determining an asymptotic behaviour of \zeta(G). Moreover, we extend the argument to sparse graphs.},
+	   pdf = {posted_papers/dudek_2020_localization.pdf}      
+      
+      
+      }
+}
+
+
+
+
+
+
+
+@article{gao_2020_hamilton,
+title = {Hamilton Cycles in the Semi-random Graph Process},
+journal = {European Journal of Combinatorics},
+volume = {99},
+pages = {103423},
+year = {2022},
+issn = {0195-6698},
+doi = {https://doi.org/10.1016/j.ejc.2021.103423},
+arxiv = {2006.02599},
+html = {https://www.sciencedirect.com/science/article/pii/S0195669821001165},
+author = {Pu Gao and Bogumił Kamiński and Calum MacRury and Paweł Prałat},
+abstract = {The semi-random graph process is a single player game in which the player is initially presented an empty graph on n vertices. In each round, a vertex u is presented to the player independently and uniformly at random. The player then adaptively selects a vertex v, and adds the edge uv to the graph. For a fixed monotone graph property, the objective of the player is to force the graph to satisfy this property with high probability in as few rounds as possible. We focus on the problem of constructing a Hamilton cycle in as few rounds as possible. In particular, we present a novel strategy for the player which achieves a Hamiltonian cycle in c∗n rounds, where the value of c∗ is the result of a high dimensional optimization problem. Numerical computations indicate that c∗<2.61135. This improves upon the previously best known upper bound of 3n rounds. We also show that the previously best lower bound of (ln2+ln(1+ln2)+o(1))n is not tight.},
+pdf = {posted_papers/gao_2020_hamilton.pdf}
+}
+
+
+
+
+@inproceedings{borodin_2021_secretary,
+      title={Secretary Matching Meets Probing with Commitment}, 
+      author={Allan Borodin and Calum MacRury and Akash Rakheja},
+      year={2021},
+      booktitle={APPROX},
+      eprint={2008.09260},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS},
+      arxiv = {2008.09260},
+      html={https://drops.dagstuhl.de/opus/volltexte/2021/14706/},
+      note = {This work generalizes many of the results from a 2020 preprint by the same authors, ``Bipartite Stochastic Matching: Online, Random Order, and I.I.D. Models''. The arXiv
+version is titled "Greedy Approaches to Online Stochastic Matching".},
+      abstract={
+Within the context of stochastic probing with commitment, we consider
+the online stochastic matching problem; that is, the one-sided online bipartite
+matching problem where edges adjacent to an online node must be probed to
+determine if they exist based on edge probabilities that become known when an online vertex arrives.  If a probed edge
+exists, it must be used in the matching (if possible). We consider the
+competitiveness of online algorithms in both the adversarial order model (AOM)
+and the random order model (ROM). More specifically, we consider a bipartite stochastic graph  
+$G = (U,V,E)$ where $U$ is the set of offline vertices, $V$ is the set of online vertices and $G$
+has edge probabilities $(p_{e})_{e \in E}$ and edge weights $(w_{e})_{e \in E}$.
+Additionally, $G$ has probing constraints $(\scr{C}_{v})_{v \in V}$,  where $\scr{C}_v$
+indicates which sequences of edges adjacent to an online vertex $v$ can be probed. We assume that $U$ is
+known in advance, and that $\scr{C}_v$, together with the
+edge probabilities and weights adjacent to an online vertex  are only revealed  when the online vertex arrives. 
+This model generalizes the various settings of the classical bipartite matching problem,
+and so our main contribution is in making progress towards understanding which classical results extend to the stochastic
+probing model.
+},
+
+ pdf = {posted_papers/borodin_2021_secretary.pdf}
+
+}
+
+
+
+
+
+
+@article{english_zero_forcing_2021,
+title = "Probabilistic Zero Forcing on Random Graphs",
+journal = "European Journal of Combinatorics",
+volume = "91",
+pages = "103207",
+year = "2021",
+note = "Colorings and structural graph theory in context (a tribute to Xuding Zhu)",
+issn = "0195-6698",
+doi = "https://doi.org/10.1016/j.ejc.2020.103207",
+url = "http://www.sciencedirect.com/science/article/pii/S0195669820301281",
+author = "Sean English and Calum MacRury and Paweł Prałat",
+arxiv = {1909.06568},
+abstract = "Zero forcing is a deterministic iterative graph coloring process in which vertices are colored either blue or white, and in every round, any blue vertices that have a single white neighbor force these white vertices to become blue. Here we study probabilistic zero forcing, where blue vertices have a non-zero probability of forcing each white neighbor to become blue. 
+
+We explore the propagation time for probabilistic zero forcing on the Erd\H{o}s-R\'eyni random graph G(n,p) when we start with a single vertex colored blue. We show that when p=\log^{-o(1)}n, then with high probability it takes (1+o(1))\log_2 \log_2 n rounds for all the vertices in G(n,p) to become blue, and when \log n/n \ll p \le \log^{-O(1)} n, then with high probability it takes \Theta(\log(1/p)) rounds.",
+html = {https://www.sciencedirect.com/science/article/pii/S0195669820301281}
+}
+
+
+@article{jakobson_ben_conv_2018,
+author = {Jakobson, Dmitry and MacRury, Calum and Norin, Sergey and Turner, Lise},
+year = {2018},
+month = {12},
+pages = {},
+title = {Distribution of Coefficients of Rank Polynomials for Random Sparse Graphs},
+volume = {25},
+journal = {The Electronic Journal of Combinatorics},
+doi = {10.37236/7133},
+pdf = {posted_papers/jakobson_ben_conv_2018.pdf},
+abstract = {
+We study the distribution of coefficients of rank polynomials of random sparse graphs.  We first discuss the limiting distribution for general graph sequences that converge in the sense of Benjamini-Schramm.  Then we compute the limiting distri-bution and Newton polygons of the coefficients of the rank polynomial of randomd-regular graphs.},
+html ={https://www.combinatorics.org/ojs/index.php/eljc/article/view/v25i4p50}
+}
+
+
+@article{bal_2018_zero,
+      title={Zero Forcing Number of Random Regular Graphs}, 
+      author={Deepak Bal and Patrick Bennett and Sean English and Calum MacRury and Paweł Prałat},
+      year={2021},
+      volume = {12},
+      pages = {85-116},
+      primaryClass={math.CO},
+      journal = {Journal of Combinatorics},
+      abstract = {
+      The zero forcing process is an iterative graph colouring process in which at each time step a coloured vertex with a single uncoloured neighbour can force this neighbour to become coloured. A zero forcing set of a graph is an initial set of coloured vertices that can eventually force the entire graph to be coloured. The zero forcing number is the size of the smallest zero forcing set. We explore the zero forcing number for random regular graphs, improving on bounds given by Kalinowski, Kam\u{c}ev and Sudakov. We also propose and analyze a degree greedy algorithm for finding small zero forcing sets using the differential equations method.},
+     
+
+html = {https://www.intlpress.com/site/pub/pages/journals/items/joc/content/vols/0012/0001/a004/index.php?mode=ns},     
+     
+arxiv = {1812.06477},
+
+pdf = {posted_papers/bal_2018_zero.pdf}
+}
+
