@@ -23,5 +23,5 @@ of Allan Borodin. I'm fortunate to be supported by an NSERC Postdoctoral Fellows
 
 I'm interested in optimization under uncertainty, particularly when the uncertainty is due to randomness. 
 This includes problems such as prophet inequalities, stochastic probing, and online stochastic matching. A focus
-of my work has been in using randomized rounding tools, such as contention resolution schemes, to design algorithms
+of my work is using randomized rounding tools, such as contention resolution schemes, to design algorithms
 for these problems. 
