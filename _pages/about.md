@@ -21,7 +21,7 @@ I'm a postdoctoral research scholar at Columbia Business School where I'm advise
 Previously, I obtained my PhD from the Department of Computer Science at the University of Toronto under the supervision
 of Allan Borodin. I'm fortunate to be supported by an NSERC Postdoctoral Fellowship (PDF).
 
-I'm interested in optimization under uncertainty, particularly when the uncertainty is due to randomness. 
+I'm interested in optimization under uncertainty, particularly in the presence of randomness. 
 This includes problems such as prophet inequalities, stochastic probing, and online stochastic matching. A focus
 of my work is using randomized rounding tools, such as contention resolution schemes, to design algorithms
 for these problems. 
