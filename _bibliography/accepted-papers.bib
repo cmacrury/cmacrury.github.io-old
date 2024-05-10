@@ -5,6 +5,97 @@
 
 
 
+@inproceedings{macrury2023induction,
+  author       = {Calum MacRury and
+                  Will Ma},
+  title        = {Random-order Contention Resolution via Continuous Induction: Tightness
+                  for Bipartite Matching under Vertex Arrivals},
+  booktitle      = {Annual ACM Symposium on Theory of Computing, {STOC}},
+  volume       = {abs/2310.10101},
+  year         = {2024},
+  arXiv = {2310.10101},
+  url          = {https://doi.org/10.48550/arXiv.2310.10101},
+  doi          = {10.48550/ARXIV.2310.10101},
+  eprinttype    = {arXiv},
+  eprint       = {2310.10101},
+  timestamp    = {Wed, 25 Oct 2023 17:11:46 +0200},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2310-10101.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+ arXiv = {2310.10101},
+ abstract = {We introduce a new approach for designing Random-order Contention Resolution Schemes (RCRS's) via exact solution in continuous time. Given a function $c(y):[0,1] \rightarrow [0,1]$,
+we show how to select each element which arrives at time $y \in [0,1]$ with probability \textit{exactly} $c(y)$.
+We provide a rigorous algorithmic framework for achieving this, which discretizes the time interval and also needs to sample its past execution to ensure these exact selection probabilities.
+We showcase
+our framework in the context of online contention resolution schemes for matching with random-order vertex arrivals. For bipartite graphs with two-sided arrivals, we design a $(1+e^{-2})/2 \approx 0.567$-selectable RCRS, which we also show to be tight.
+Next, we show that the presence of short odd-length cycles is the only barrier to attaining a (tight) $(1+e^{-2})/2$-selectable RCRS on general graphs. By generalizing our bipartite RCRS, we design an RCRS for graphs with odd-length girth $g$ which is $(1+e^{-2})/2$-selectable as $g \rightarrow \infty$. This convergence happens very rapidly: for triangle-free
+graphs (i.e., $g \ge 5$), we attain a  $121/240 + 7/16 e^2 \approx 0.563$-selectable RCRS.
+Finally, for general graphs we improve on the $8/15 \approx 0.533$-selectable RCRS of (Fu et al., 2021) and design an RCRS which is at least $0.535$-selectable.
+Due to the reduction of (Ezra et al., 2020), our bounds yield a $0.535$-competitive (respectively, $(1+e^{-2})/2$-competitive) algorithm for prophet secretary matching
+on general (respectively, bipartite) graphs under vertex arrivals.},
+selected = {true},
+pdf = {posted_papers/macrury_2023_induction.pdf}
+}
+
+
+
+
+@article{macrury2022threshold,
+  author    = {Calum MacRury and
+               Erlang Surya},
+  title     = {Sharp Thresholds in Adaptive Random Graph Processes},
+  volume    = {abs/2207.14469},
+  year      = {2023},
+  url       = {https://doi.org/10.48550/arXiv.2207.14469},
+  doi       = {10.48550/arXiv.2207.14469},
+  journal = {Random Structures and Algorithms, {RSA}},
+  arXiv  = {2207.14469},
+  timestamp = {Tue, 02 Aug 2022 15:25:29 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2207-14469.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract ={The D-process is a single player game in which the player is initially presented the empty graph on n vertices. In each step, a subset of edges X is independently sampled according to a distribution D. The player then selects one edge e from X, and adds e to its current graph. For a fixed monotone increasing graph property P, the objective of the player is to force the graph to satisfy P in as few steps as possible. Through appropriate choices of D, the D-process generalizes well-studied adaptive random graph processes, such as the Achlioptas process and the semi-random graph process
+We prove a sufficient condition for the existence of a sharp threshold for P in the D-process. For the semi-random process, we use this condition to prove the existence of a sharp threshold when P corresponds to being Hamiltonian or to containing a perfect matching. These are the first results for the semi-random graph process which show the existence of a sharp threshold when P corresponds to containing a sparse spanning graph. Using a separate analytic argument, we show that each sharp threshold is of the form CPn for some fixed constant CP>0. This answers two of the open problems proposed by Ben-Eliezer et al. (SODA 2020) in the affirmative. Unlike similar results which establish sharp thresholds for certain distributions and properties, we establish the existence of sharp thresholds without explicitly identifying asymptotically optimal strategies.},
+  pdf = {posted_papers/macrury_2023_thresholds.pdf},
+selected = {true},
+html = {https://onlinelibrary.wiley.com/doi/full/10.1002/rsa.21197}
+}
+
+
+
+
+@article{macrury2022transport,
+	title ={Optimizing Transport Frequency in Multi-Layered Urban
+	Transportation Networks for Pandemic Prevention},
+	journal = {Public Transport},
+	year = {2023},
+	author = {Calum MacRury and Nykyta Polituchyi and Paweł Prałat and Kinga Siuta and Przemysław Szufel},
+	abstract = {In this paper, we identify determinants of pandemic spread in urban populations. Specifically, we develop a multi-agent simulation framework to model virus spread in complex networks.
+	Our agents periodically commute between home and work via a combination of walking routes
+	and public transit, and make decisions intelligently based upon their location, available routes,
+	and expectations of public transport arrival times. Our infection scheme allows for different
+	contagiousness levels, as a function of the virus’s strain and where the agents interact (i.e.,
+	inside or outside). Our results show that the pandemic’s scale is heavily impacted by the network’s structure, and the decision making of the agents. In particular, the progression of the
+	pandemic greatly differs when agents primarily infect each other in a crowded urban transportation system, opposed to while walking. Additionally, the results show that local subgraph
+	characteristics, including topology, structure, and statistics such as its degree distribution and
+	density, affect the viruses’ transmission rates. We also assess the effect of modifying the public
+	transport’s running frequency on the spread of two different virus strains (with different levels
+	of contagiousness). In particular, lowering the running frequency can discourage agents from
+	taking public transportation too often, especially for shorter distances. On the other hand, the
+	low frequency contributes to more crowded streetcars or subway cars if the policy is not designed
+	correctly, which is why such an analysis may prove valuable for finding “sweet spots” that optimize the system. The proposed approach has been validated on real world data, and a model
+	of the transportation network of downtown Toronto. The framework used is flexible and can
+	be easily adjusted to model other urban environments, and additional forms of transportation
+	(such as carpooling, ride-share and more).},
+	pdf = {posted_papers/macrury_2022_transport.pdf},
+      html = {https://link.springer.com/article/10.1007/s12469-024-00351-0}
+	
+}
+
+
+
+
+
+
+
 @inproceedings{macrury2022contention,
 	author    = {Calum MacRury and
 	Will Ma and Nathaniel Grammel},
@@ -13,28 +104,12 @@
 	booktitle = {{ACM-SIAM} Symposium on Discrete
 	Algorithms, {SODA}},
 	eprinttype = {arXiv},
+      note = {Major revision at Operations Research},
 	arXiv  = {2209.07520},
-	abstract ={We present new results for online contention resolution schemes for the
-	matching polytope of graphs, in the random-order (RCRS) and adversarial (OCRS)
-	arrival models. Our results include improved selectability guarantees (i.e., lower bounds), as well
-	as new impossibility results (i.e., upper bounds).
-	By well-known reductions to the prophet
-	(secretary) matching problem, a $c$-selectable OCRS (RCRS) implies a $c$-competitive
-	algorithm for adversarial (random order) edge arrivals.
-	Similar reductions are also known for the query-commit matching problem.
-	For the adversarial arrival model, we present a new
-	analysis of the OCRS of Ezra et al.~(EC, 2020). We show that this scheme is
-	$0.344$-selectable for general graphs and $0.349$-selectable for bipartite
-	graphs, improving on the previous $0.337$ selectability result for this algorithm. We also show that the selectability of this scheme cannot
-	be greater than $0.361$ for general graphs and $0.382$ for bipartite graphs. We further show that no OCRS can
-	achieve a selectability greater than $0.4$ for general graphs, and $0.433$
-	for bipartite graphs.
-	
-	For random-order arrivals, we present two attenuation-based schemes which use new attenuation functions.
-	Our first RCRS is $0.474$-selectable for general graphs, and our
-	second is $0.476$-selectable for bipartite graphs. These results improve upon the recent $0.45$ (and $0.456$) selectability results for general graphs (respectively, bipartite graphs) due to Pollner et al.~(EC, 2022). On general graphs, our 0.474-selectable RCRS provides the best known positive result even for offline contention resolution, and also for the correlation gap.
-	We conclude by proving a fundamental upper bound of 0.5 on the selectability of RCRS, using bipartite graphs.},
-	pdf = {posted_papers/macrury_2022_contention.pdf},
+	abstract ={Online Contention Resolution Schemes (OCRS's) represent a modern tool for selecting a subset of elements, subject to resource constraints, when the elements are presented to the algorithm sequentially. OCRS's have led to some of the best-known competitive ratio guarantees for online resource allocation problems, with the added benefit of treating different online decisions -- accept/reject, probing, pricing -- in a unified manner. This paper analyzes OCRS's for resource constraints defined by matchings in graphs, a fundamental structure in combinatorial optimization. We consider two dimensions of variants: the elements being presented in adversarial or random order; and the graph being bipartite or general. We improve the state of the art for all combinations of variants, both in terms of algorithmic guarantees and impossibility results. Some of our algorithmic guarantees are best-known even compared to Contention Resolution Schemes that can choose the order of arrival or are offline. All in all, our results for OCRS directly improve the best-known competitive ratios for online accept/reject, probing, and pricing problems on graphs in a unified manner.},
+	pdf = {posted_papers/macrury_2024_contention.pdf},
+      selected= {true},
+      html = {https://epubs.siam.org/doi/10.1137/1.9781611977554.ch76}
 }
 
 
@@ -70,7 +145,6 @@ We focus on the problem of constructing a Hamiltonian cycle in as few rounds as 
       primaryClass={cs.DM},
       arxiv = {2102.04325},
        html={https://drops.dagstuhl.de/opus/volltexte/2022/17168/},
-      note = {This work generalizes many of the results from a 2020 preprint by the same authors, ``Bipartite Stochastic Matching: Online, Random Order, and I.I.D. Models''. The arXiv version is titled "Prophet Matching Meets Probing with Commitment."},
       abstract = {
 We consider the online bipartite stochastic matching problem with known i.d. (independently distributed) online vertex arrivals. In this problem, when an online vertex arrives, its weighted edges must be
 probed (queried) to determine if they exist, based on known edge probabilities. Our algorithms operate
@@ -93,13 +167,14 @@ we establish new competitive bounds all of which generalize the standard non-sto
 @article{macrury2022phase,
       title={The Phase Transition of Discrepancy in Random Hypergraphs}, 
       author={Calum MacRury and Tomáš Masařík and Leilani Pai and Xavier Pérez-Giménez},
-      year={2022},
+      year={2023},
       eprint={2102.07342},
-      journal = {SIAM Journal on Discrete Mathematics (minor revision)},
+      journal = {SIAM Journal on Discrete Mathematics},
       archivePrefix={arXiv},
       primaryClass={math.CO},
       arxiv={2102.07342},
-      pdf = {posted_papers/macrury_2021_discrepancy.pdf},
+      html = {https://epubs.siam.org/doi/10.1137/21M1451427},
+      pdf = {posted_papers/macrury_2023_discrepancy.pdf},
       abstract={Motivated by the Beck-Fiala conjecture, we study the discrepancy problem in two related models of random hypergraphs on $n$ vertices and $m$ edges. In the first ({\em edge-independent}) model, a random hypergraph $H_1$ is constructed by fixing a parameter $p$ and allowing each of the $n$ vertices to join each of the $m$ edges independently with probability $p$. In the parameter range in which $pn \rightarrow \infty$ and $pm \rightarrow \infty$, we show that with high probability (\whp) $H_1$ has discrepancy at least $\Omega(2^{-n/m} \sqrt{pn})$ when $m = O(n)$, and at least $\Omega(\sqrt{pn \log\gamma })$ when $m \gg n$,
 where $\gamma = \min\{ m/n, pn\}$. In the second ({\em edge-dependent}) model, $d$ is fixed and each vertex of $H_2$ independently joins exactly $d$ edges uniformly at random.
 We obtain analogous results for this model by generalizing the techniques used for the edge-independent model with $p=d/m$. Namely, for $d \rightarrow \infty$ and $dn/m \rightarrow \infty$, we prove that \whp\ $H_{2}$ has discrepancy at least $\Omega(2^{-n/m} \sqrt{dn/m})$ when $m = O(n)$, and at least $\Omega(\sqrt{(dn/m) \log\gamma})$ when $m \gg n$, where $\gamma =\min\{m/n, dn/m\}$. 
@@ -120,7 +195,7 @@ Furthermore, we obtain nearly matching asymptotic upper bounds on the discrepanc
       html={https://epubs.siam.org/doi/10.1137/21M1446939},
       archivePrefix={arXiv},
       primaryClass={math.CO},
-      pdf = {posted_papers/gao_2021_matching.pdf},
+      pdf = {posted_papers/gao_2022_matching.pdf},
       arxiv={2105.13455},
       abstract={
 		The semi-random graph process is a single player game in which the player is initially presented an empty graph on $n$ vertices. In each round, a vertex $u$ is presented to the player independently and uniformly at random. The player then adaptively selects a vertex $v$, and adds the edge $uv$ to the graph. For a fixed monotone graph property, the objective of the player is to force the graph to satisfy this property with high probability in as few rounds as possible.
@@ -130,34 +205,19 @@ We focus on the problem of constructing a perfect matching in as few rounds as p
 
 
 
-@inproceedings{bonato_2020_probabilistically,
-  title={Probabilistically Faulty Searching on a Half-Line},
+@article{bonato_2020_probabilistically,
+  title={Algorithms for $p$-Faulty Search on a Half-Line},
   author={Bonato, Anthony and Georgiou, Konstantinos and MacRury, Calum and Pra\l{}at, Pawe\l{}},
   arxiv={2002.07797},
-  booktitle={LATIN},
-  year={2020},
+  JOURNAL={Algorithmica},
+  year={2022},
+  doi = {10.1007/s00453-022-01075-y},
+  note ={Conference version appeared in LATIN 2020},
   abstract = {We study p-Faulty Search, a variant of the classic cow-path optimization problem, where a unit speed robot searches the half-line (or 1-ray) for a hidden item. The searcher is probabilistically faulty, and detection of the item with each visitation is an independent Bernoulli trial whose probability of success p is known. The objective is to minimize the worst case expected detection time, relative to the distance of the hidden item to the origin. A variation of the same problem was first proposed by Gal in 1980. Then in 2003, Alpern and Gal [The Theory of Search Games and Rendezvous] proposed a so-called monotone solution for searching the line (2-rays); that is, a trajectory in which the newly searched space increases monotonically in each ray and in each iteration. Moreover, they conjectured that an optimal trajectory for the 2-rays problem must be monotone. We disprove this conjecture when the search domain is the half-line (1-ray). We provide a lower bound for all monotone algorithms, which we also match with an upper bound. Our main contribution is the design and analysis of a sequence of refined search strategies, outside the family of monotone algorithms, which we call t-sub-monotone algorithms. Such algorithms induce performance that is strictly decreasing with t, and for all p \in (0,1). The value of t quantifies, in a certain sense, how much our algorithms deviate from being monotone, demonstrating that monotone algorithms are sub-optimal when searching the half-line.},
-html = {https://link.springer.com/chapter/10.1007/978-3-030-61792-9_14}
+html = {https://link.springer.com/article/10.1007/s00453-022-01075-y},
+pdf = {posted_papers/bonato_2020_prob.pdf}
 }
 
-@inproceedings{bonato_2015_robot,
-author = {Bonato, Anthony and R\'{\i}o-Chanona, Rita M. and MacRury, Calum and Nicolaidis, Jake and P\'{e}rez-Gim\'{e}nez, Xavier and Pra\l{}at, Pawe\l{} and Ternovsky, Kirill},
-title = {The Robot Crawler Number of a Graph},
-year = {2015},
-isbn = {9783319267838},
-publisher = {Springer-Verlag},
-address = {Berlin, Heidelberg},
-url = {https://doi.org/10.1007/978-3-319-26784-5_11},
-doi = {10.1007/978-3-319-26784-5_11},
-note = {Conference version of ``The Robot Crawler Graph Process''.},
-abstract = {Information gathering by crawlers on the web is of practical interest. We consider a simplified model for crawling complex networks such as the web graph, which is a variation of the robot vacuum edge-cleaning process of Messinger and Nowakowski. In our model, a crawler visits nodes via a deterministic walk determined by their weightings which change during the process deterministically. The minimum, maximum, and average time for the robot crawler to visit all the nodes of a graph is considered on various graph classes such as trees, multi-partite graphs, binomial random graphs, and graphs generated by the preferential attachment model.},
-booktitle = {WAW},
-pages = {132–147},
-numpages = {16},
-location = {Eindhoven, The Netherlands},
-series = {WAW 2015},
-html = {https://link.springer.com/chapter/10.1007/978-3-319-26784-5_11}
-}
 
 @article{bonato_2018_robot,
 title = "The Robot Crawler Graph Process",
@@ -166,7 +226,7 @@ volume = "247",
 pages = "23 - 36",
 year = "2018",
 issn = "0166-218X",
-note = {Journal version of ``The Robot Crawler Number of a Graph''.},
+note = {Conference version appeared in WAW 2015},
 doi = "https://doi.org/10.1016/j.dam.2018.01.018",
 url = "http://www.sciencedirect.com/science/article/pii/S0166218X18301227",
 author = "Anthony Bonato and Rita M. {del Río-Chanona} and Calum MacRury and Jake Nicolaidis and Xavier Pérez-Giménez and Paweł Prałat and Kirill Ternovsky",
@@ -231,8 +291,6 @@ pdf = {posted_papers/gao_2020_hamilton.pdf}
       primaryClass={cs.DS},
       arxiv = {2008.09260},
       html={https://drops.dagstuhl.de/opus/volltexte/2021/14706/},
-      note = {This work generalizes many of the results from a 2020 preprint by the same authors, ``Bipartite Stochastic Matching: Online, Random Order, and I.I.D. Models''. The arXiv
-version is titled "Greedy Approaches to Online Stochastic Matching".},
       abstract={
 Within the context of stochastic probing with commitment, we consider
 the online stochastic matching problem; that is, the one-sided online bipartite
@@ -267,7 +325,6 @@ journal = "European Journal of Combinatorics",
 volume = "91",
 pages = "103207",
 year = "2021",
-note = "Colorings and structural graph theory in context (a tribute to Xuding Zhu)",
 issn = "0195-6698",
 doi = "https://doi.org/10.1016/j.ejc.2020.103207",
 url = "http://www.sciencedirect.com/science/article/pii/S0195669820301281",
@@ -283,7 +340,6 @@ html = {https://www.sciencedirect.com/science/article/pii/S0195669820301281}
 @article{jakobson_ben_conv_2018,
 author = {Jakobson, Dmitry and MacRury, Calum and Norin, Sergey and Turner, Lise},
 year = {2018},
-month = {12},
 pages = {},
 title = {Distribution of Coefficients of Rank Polynomials for Random Sparse Graphs},
 volume = {25},

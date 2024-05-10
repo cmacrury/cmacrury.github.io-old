@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Affiliations</a>. Postdoctoral Research Scholar, Columbia University, Graduate School of Business
 
 profile:
   align: right
@@ -13,25 +13,11 @@ profile:
     <p>665 W 130th St</p>
     <p>New York, New York 10025</p>
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I'm a postdoctoral research scholar in the theory group at the University of Toronto, where I'm fortunate to be supervised by Dr. Allan Borodin.
-Previously, I obtained a master's degree in mathematics from McGill University under the supervision of Dr. Dmitry Jakobson, and before that, I completed my
-undergraduate studies at Dalhousie University. 
-
-
-
-I'm broadly interested in topics which intersect between probabilistic combinatorics
-and algorithm design. More specifically, I work on combinatorics problems which involve
-randomness in the underlying discrete structure, typically in the context of random graphs
-and processes. Lately, I've been researching the fast construction of sparse subgraphs in the semi-random graph process. I'm also interested in random hypergraphs and matrices, 
-and have researched both in the context of discrepancy theory. My work in combinatorial optimization is in online algorithms,
-and more generally, decision making under uncertainty. I'm especially interested in stochastic matching problems.
-
-
-
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm a postdoctoral research scholar at Columbia Business School where I'm advised by Will Ma.
+Previously, I obtained my PhD from the Department of Computer Science at the University of Toronto under the supervision
+of Allan Borodin, and before that, I obtained a master's degree in mathematics from McGill University under the supervision of Dr. Dmitry Jakobson.
 
