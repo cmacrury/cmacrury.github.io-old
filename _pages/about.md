@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Postdoctoral Research Scholar, Columbia University, Graduate School of Business
+subtitle: Postdoctoral Research Scholar, Columbia University, Graduate School of Business
 
 profile:
   align: right
@@ -17,7 +17,7 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I'm a postdoctoral research scholar at Columbia Business School where I'm advised by Will Ma. 
+I'm a Postdoctoral Research Scholar at Columbia Business School where I'm advised by Will Ma. 
 Previously, I obtained my PhD from the Department of Computer Science at the University of Toronto under the supervision
 of Allan Borodin. I'm fortunate to be supported by an NSERC Postdoctoral Fellowship (PDF).
 
