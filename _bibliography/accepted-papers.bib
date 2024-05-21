@@ -10,7 +10,7 @@
                   Will Ma},
   title        = {Random-order Contention Resolution via Continuous Induction: Tightness
                   for Bipartite Matching under Vertex Arrivals},
-  booktitle      = {Annual ACM Symposium on Theory of Computing, {STOC}},
+  booktitle      = {Annual ACM Symposium on Theory of Computing (STOC)},
   volume       = {abs/2310.10101},
   year         = {2024},
   arXiv = {2310.10101},
@@ -39,11 +39,19 @@ pdf = {posted_papers/macrury_2023_induction.pdf}
 
 
 
-@article{ma2024vanishing,
+@inproceedings{ma2024vanishing,
 author = {Will Ma and Calum MacRury and Pranav Nuti},
 title = {Online Matching and Contention Resolution for Edge Arrivals with Vanishing Probabilities},
 year = {2024},
-journal = {ACM Conference on Economics and Computation, {EC 2024}},
+abstract = {We study the performance of sequential contention resolution and matching algorithms on random graphs with vanishing edge probabilities. The regime with vanishing edge probabilities is interesting for several reasons: 1) in applications such as online advertising, an edge represents a customer clicking an ad and the probability of any such event is tiny; 2) in settings where worst-case instances for contention resolution schemes are known, they have vanishing edge probabilities; 3) this is the main regime of interest in the literature on Erdős–Rényi random graphs.
+
+When the edges of the graph are processed in an adversarially-chosen order, we derive a new OCRS that is $0.382$-selectable, attaining the "independence benchmark" from the literature under the vanishing edge probabilities assumption.
+Complementary to this positive result, we show that no OCRS can be more than $0.390$-selectable, significantly improving upon the upper bound of $0.428$ from the literature.
+Meanwhile, when the edges of the graph are processed in a uniformly random order, we show that the simple greedy CRS which accepts all active and feasible edges is $1/2$-selectable.
+This result is tight due to a known upper bound.
+Finally, when the algorithm can choose the processing order, we show that a slight tweak to the random order---give each vertex a random priority and process edges in lexicographic order---results in a strictly better OCRS that is $1-log(2-1/e)\approx 0.510$-selectable.
+Our positive results also apply to online matching on $1$-uniform random graphs with vanishing (non-identical) edge probabilities, extending and unifying some results from that literature.},
+booktitle = {ACM Conference on Economics and Computation (EC)},
 }
 
 
@@ -56,7 +64,7 @@ journal = {ACM Conference on Economics and Computation, {EC 2024}},
   year      = {2023},
   url       = {https://doi.org/10.48550/arXiv.2207.14469},
   doi       = {10.48550/arXiv.2207.14469},
-  journal = {Random Structures and Algorithms, {RSA}},
+  journal = {Random Structures and Algorithms},
   arXiv  = {2207.14469},
   timestamp = {Tue, 02 Aug 2022 15:25:29 +0200},
   biburl    = {https://dblp.org/rec/journals/corr/abs-2207-14469.bib},
@@ -111,7 +119,7 @@ html = {https://onlinelibrary.wiley.com/doi/full/10.1002/rsa.21197}
 	title     = {On (Random-order) Online Contention Resolution Schemes for the Matching Polytope of (Bipartite) Graphs},
 	year ={2023},
 	booktitle = {{ACM-SIAM} Symposium on Discrete
-	Algorithms, {SODA}},
+	Algorithms (SODA)},
 	eprinttype = {arXiv},
       note = {Major revision at Operations Research},
 	arXiv  = {2209.07520},
@@ -129,7 +137,8 @@ html = {https://onlinelibrary.wiley.com/doi/full/10.1002/rsa.21197}
   	  title = {A Fully Adaptive Strategy for Hamiltonian Cycles in the Semi-Random Graph Process},
   	  author = {Pu Gao and Calum MacRury and Paweł Prałat},
       year={2022},
-      booktitle={RANDOM},
+      booktitle={International Conference on Randomization and
+Computation (RANDOM)},
       eprint={2102.04325},
       archivePrefix={arXiv},
       primaryClass={cs.DM},
@@ -147,7 +156,8 @@ We focus on the problem of constructing a Hamiltonian cycle in as few rounds as 
 @inproceedings{borodin2021prophet,
       title={Prophet Matching in the Probe-Commit Model}, 
       author={Allan Borodin and Calum MacRury and Akash Rakheja},
-      booktitle={APPROX},
+      booktitle={International Conference on Approximation Algorithms for Combinatorial
+Optimization Problems (APPROX)},
       year={2022},
       eprint={2102.04325},
       archivePrefix={arXiv},
@@ -294,7 +304,8 @@ pdf = {posted_papers/gao_2020_hamilton.pdf}
       title={Secretary Matching Meets Probing with Commitment}, 
       author={Allan Borodin and Calum MacRury and Akash Rakheja},
       year={2021},
-      booktitle={APPROX},
+      booktitle={International Conference on Approximation Algorithms for Combinatorial
+Optimization Problems (APPROX)},
       eprint={2008.09260},
       archivePrefix={arXiv},
       primaryClass={cs.DS},
