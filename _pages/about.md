@@ -13,7 +13,7 @@ profile:
     <p>665 W 130th St</p>
     <p>New York, New York 10025</p>
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
@@ -24,3 +24,6 @@ of Allan Borodin. I'm fortunate to be supported by an NSERC Postdoctoral Fellows
 I'm interested in optimization under uncertainty, particularly in the presence of randomness. 
 This includes problems such as prophet inequalities, assortment optimization, and stochastic matching. A focus
 of my work is designing algorithms for these problems via randomized rounding tools.
+
+
+Linked <a href="https://www.youtube.com/watch?v=8NSxHFOyD_Q&t=546s">here</a> is a talk that I gave at the University of Maryland summarizing some of my recent research.
