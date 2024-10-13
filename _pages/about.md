@@ -26,4 +26,4 @@ This includes problems such as prophet inequalities, assortment optimization, an
 of my work is designing algorithms for these problems via randomized rounding tools.
 
 
-Linked <a href="https://www.youtube.com/watch?v=8NSxHFOyD_Q&t=546s">here</a> is a talk that I gave which summarizes some of my recent research.
+Linked <a href="https://www.youtube.com/watch?v=8NSxHFOyD_Q&t=546s">here</a> is a talk which I gave that summarizes some of my recent research.
