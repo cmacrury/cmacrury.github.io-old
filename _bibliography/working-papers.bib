@@ -21,6 +21,19 @@
   timestamp    = {Thu, 04 Apr 2024 15:22:22 +0200},
   biburl       = {https://dblp.org/rec/journals/corr/abs-2403-05378.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org},
+abstract = {In the Network Revenue Management (NRM) problem, products composed of up to $L$ resources are sold to stochastically arriving customers. We take a randomized rounding approach to NRM, motivated by the modern tool of Online Contention Resolution Schemes (OCRS). The goal is to take a fractional solution to NRM that satisfies the resource constraints in expectation, and implement it in an online policy that satisfies the resource constraints with probability 1, while (approximately) preserving all of the sales that were prescribed by the fractional solution.
+
+In NRM and revenue management problems, customer substitution induces a negative correlation between products being demanded, making it difficult to apply the standard definition of OCRS. We start by deriving a more powerful notion of "random-element" OCRS that achieves a guarantee of $1/(1+L)$ for NRM with customer substitution, matching a common benchmark in the literature.
+We show this benchmark is unbeatable for all integers $L$ that are the power of a prime number, using a construction based on finite affine planes.
+We then show how to beat this benchmark under any of three assumptions: 1) no customer substitution (i.e., in the standard OCRS setting);
+2) products comprise one item from each of up to $L$ groups; or
+3) customers arrive in a uniformly random (instead of fixed adversarial) order.
+Finally, we show that under both assumptions 1) and 3), it is possible to do better than offline CRS when $L\ge 5$.
+
+Our results have corresponding implications for Online Combinatorial Auctions, in which buyers bid for bundles of up to $L$ items, and buyers being single-minded is akin to having no substitution.
+Our result under assumption 2) implies that $1/(1+L)$ can be beaten for Prophet Inequality on the intersection of $L$ partition matroids, a problem of interest.
+In sum, our paper shows how to apply OCRS to all of these problems and establishes a surprising separation in the achievable guarantees when substitution is involved,
+under general resource constraints parametrized by $L$.},
 pdf = {posted_papers/ma_2024_nrm.pdf},
 }
 
@@ -44,6 +57,9 @@ pdf = {posted_papers/ma_2024_nrm.pdf},
   doi          = {10.48550/ARXIV.2311.05533},
   eprinttype    = {arXiv},
   arxiv     = {2311.05533},
+  abstract = {The semi-random graph process is an adaptive random graph process in which an online algorithm is initially presented an empty graph on $n$ vertices. In each round, a vertex $u$ is presented to the algorithm independently and uniformly at random. The algorithm then adaptively selects a vertex $v$, and adds the edge $uv$ to the graph. For a given graph property, the objective of the algorithm is to force the graph to satisfy this property asymptotically almost surely in as few rounds as possible.
+
+We focus on the property of Hamiltonicity. We present an adaptive strategy which creates a Hamiltonian cycle in $\alpha n$ rounds, where $\alpha < 1.81696$ is derived from the solution to a system of differential equations. We also show that achieving Hamiltonicity requires at least $\beta n$ rounds, where $\beta > 1.26575$. },
   pdf = {posted_papers/frieze_2023_hamiltonian.pdf},
   timestamp    = {Thu, 16 Nov 2023 09:58:01 +0100},
   biburl       = {https://dblp.org/rec/journals/corr/abs-2311-05533.bib},
@@ -63,6 +79,8 @@ pdf = {posted_papers/ma_2024_nrm.pdf},
   doi          = {10.48550/ARXIV.2302.12358},
   eprinttype    = {arXiv},
   eprint       = {2302.12358},
+  abstract = {In this note, we formulate a ``one-sided'' version of Wormald's differential equation method. In the standard ``two-sided'' method, one is given a family of random variables which evolve over time
+    and which satisfy some conditions including a tight estimate of the expected change in each variable over one time step. These estimates for the expected one-step changes suggest that the variables ought to be close to the solution of a certain system of differential equations, and the standard method concludes that this is indeed the case. We give a result for the case where instead of a tight estimate for each variable's expected one-step change, we have only an upper bound. Our proof is very simple, and is flexible enough that if we instead assume tight estimates on the variables, then we recover the conclusion of the standard differential equation method.},	
   pdf = {posted_papers/bennett_2023_de.pdf},
   timestamp    = {Tue, 28 Feb 2023 14:02:05 +0100},
   biburl       = {https://dblp.org/rec/journals/corr/abs-2302-12358.bib},
