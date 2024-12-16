@@ -40,7 +40,6 @@ Accepted Papers
 <div class="publications">
 
 {% for y in page.years-accepted-papers %}
-  <h2 class="year">{{y}}</h2>
   {% bibliography -f accepted-papers -q @*[year={{y}}]* %}
 {% endfor %}
 
