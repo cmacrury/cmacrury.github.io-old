@@ -21,6 +21,7 @@ Working Papers
 <div class="publications">
 
 {% for y in page.years-working-papers %}
+  <h2 class="year">{{y}}</h2>
   {% bibliography -f working-papers -q @*[year={{y}}]* %}
 {% endfor %}
 
@@ -39,6 +40,7 @@ Accepted Papers
 <div class="publications">
 
 {% for y in page.years-accepted-papers %}
+    <h2 class="year">{{y}}</h2>
   {% bibliography -f accepted-papers -q @*[year={{y}}]* %}
 {% endfor %}
 
@@ -60,6 +62,7 @@ Unpublished Papers and Technical Notes
 <div class="publications">
 
 {% for y in page.years-unpublished-papers %}
+  <h2 class="year">{{y}}</h2>
   {% bibliography -f unpublished-papers -q @*[year={{y}}]* %}
 {% endfor %}
 
