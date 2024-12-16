@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-``Online Bipartite Matching in the Probe-Commit Model'' is accepted to Mathematical Programming.
+<b> Online Bipartite Matching in the Probe-Commit Model </b> is accepted to Mathematical Programming.
