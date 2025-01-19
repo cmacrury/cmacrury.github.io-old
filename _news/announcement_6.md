@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-<b> Building Hamiltonian Cycles in the Semi-Random Graph Process in Less Than 2n Rounds </b> is accepted to European Journal of Combinatorics.
+<b> Building Hamiltonian Cycles in the Semi-Random Graph Process in Less Than 2n Rounds </b> is accepted to <i> European Journal of Combinatorics </i>.
 
 
