@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-<b> Proportionally Fair Matching Algorithms via Randomized Rounding </b> is accepted to AAAI 2025.
+<b> Proportionally Fair Matching Algorithms via Randomized Rounding </b> is accepted to <i> AAAI 2025 </i> as an <i> oral presentation </i>.
 
 
