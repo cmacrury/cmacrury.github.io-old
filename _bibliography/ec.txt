@@ -13,3 +13,14 @@ Finally, when the algorithm can choose the processing order, we show that a slig
 Our positive results also apply to online matching on $1$-uniform random graphs with vanishing (non-identical) edge probabilities, extending and unifying some results from that literature.},
 booktitle = {ACM Conference on Economics and Computation (EC)},
 }
+
+
+@article{frieze2025building,
+  title={Building Hamiltonian cycles in the semi-random graph process in less than 2n rounds},
+  author={Alan Frieze and Pu Gao and Calum MacRury and Paweł Prałat and Gregory Sorkin},
+  journal={European Journal of Combinatorics},
+  arxiv = {2311.05533},
+ html = {https://doi.org/10.1016/j.ejc.2025.104122},
+pdf = {frieze_2023_hamiltonian.pdf},
+  year={2025}
+}
