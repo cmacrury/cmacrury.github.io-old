@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 ---
 I'm a Postdoctoral Research Scholar at Columbia Business School where I'm advised by Will Ma. 
 Previously, I obtained my PhD from the Department of Computer Science at the University of Toronto under the supervision
-of Allan Borodin. I'm fortunate to be supported by an NSERC Postdoctoral Fellowship (PDF).
+of Allan Borodin. I'm fortunate to be supported by an NSERC Postdoctoral Fellowship (PDF). I'll be joining Georgia Tech as an Assistant Professor in Spring 2026 in the H. Milton Steward School of Industrial and Systems Engineering (ISyE).
 
 I'm interested in optimization under uncertainty, particularly in the presence of randomness. 
 This includes problems such as prophet inequalities, assortment optimization, and stochastic matching. A focus

@@ -5,37 +5,6 @@
 
 
 
-@article{ma2024nrm,
-  author       = {Will Ma and
-                  Calum MacRury and
-                  Jingwei Zhang},
-  title        = {Online Contention Resolution Schemes for Network Revenue Management
-                  and Combinatorial Auctions},
-  volume       = {abs/2403.05378},
-  year         = {2024},
-  url          = {https://doi.org/10.48550/arXiv.2403.05378},
-  doi          = {10.48550/ARXIV.2403.05378},
-  arxiv = {2403.05378},
-  eprinttype    = {arXiv},
-  eprint       = {2403.05378},
-  timestamp    = {Thu, 04 Apr 2024 15:22:22 +0200},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2403-05378.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org},
-abstract = {In the Network Revenue Management (NRM) problem, products composed of up to $L$ resources are sold to stochastically arriving customers. We take a randomized rounding approach to NRM, motivated by the modern tool of Online Contention Resolution Schemes (OCRS). The goal is to take a fractional solution to NRM that satisfies the resource constraints in expectation, and implement it in an online policy that satisfies the resource constraints with probability 1, while (approximately) preserving all of the sales that were prescribed by the fractional solution.
-
-In NRM and revenue management problems, customer substitution induces a negative correlation between products being demanded, making it difficult to apply the standard definition of OCRS. We start by deriving a more powerful notion of "random-element" OCRS that achieves a guarantee of $1/(1+L)$ for NRM with customer substitution, matching a common benchmark in the literature.
-We show this benchmark is unbeatable for all integers $L$ that are the power of a prime number, using a construction based on finite affine planes.
-We then show how to beat this benchmark under any of three assumptions: 1) no customer substitution (i.e., in the standard OCRS setting);
-2) products comprise one item from each of up to $L$ groups; or
-3) customers arrive in a uniformly random (instead of fixed adversarial) order.
-Finally, we show that under both assumptions 1) and 3), it is possible to do better than offline CRS when $L\ge 5$.
-
-Our results have corresponding implications for Online Combinatorial Auctions, in which buyers bid for bundles of up to $L$ items, and buyers being single-minded is akin to having no substitution.
-Our result under assumption 2) implies that $1/(1+L)$ can be beaten for Prophet Inequality on the intersection of $L$ partition matroids, a problem of interest.
-In sum, our paper shows how to apply OCRS to all of these problems and establishes a surprising separation in the achievable guarantees when substitution is involved,
-under general resource constraints parametrized by $L$.},
-pdf = {posted_papers/ma_2024_nrm.pdf},
-}
 
 
 
